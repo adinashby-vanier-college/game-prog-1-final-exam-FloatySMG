@@ -1,7 +1,16 @@
 #BlueJ class context
 comment0.target=CannonBall
-comment0.text=\r\n\ \r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CannonBall\ here.\ @author\ (your\ name)\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ CannonBall\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.text=\r\n\ Allows\ all\ methods\ to\ work,\ and\ checks\ to\ see\ if\ the\ "isGameLost"\ boolean\ is\ set\ to\ true.\r\n
+comment2.params=
+comment2.target=void\ moveAround()
+comment2.text=\r\n\ Allows\ the\ cannonballs\ to\ move,\ and\ also\ removes\ the\ ladybug\ from\ the\ world.\ \r\n
+comment3.params=
+comment3.target=boolean\ isGameLost()
+comment3.text=\r\n\ Checks\ to\ see\ if\ the\ ladybug\ has\ been\ removed.\r\n
+comment4.params=
+comment4.target=void\ transitionToGameOverWorld()
+comment4.text=\r\n\ Transitions\ the\ player\ to\ the\ Game\ Over\ screen.\r\n
+numComments=5
