@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Cannon" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve">Write a description of class Cannon here. @author (your name) @version (a version number or a date)</javadoc>
+    <imports>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="private" static="true" final="true" type="double" type-java="double" name="CANNON_BALL_VELOCITY" value="1500.0" value-java="1500.0" enable="true"/>
+    </fields>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Allows the methods to be used.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="moveAround()" expression-java="moveAround()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="moveAround" enable="true">
+            <javadoc xml:space="preserve">Allows the cannons to move at random intervals, making the game have more replayability.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="Greenfoot.getRandomNumber(70)==1" condition-java="Greenfoot.getRandomNumber(70) == 1" enable="true">
+                    <ifStatements>
+                        <variable type="CannonBall" type-java="CannonBall" name="newBall" value="new CannonBall()" value-java=" new CannonBall()" enable="true"/>
+                        <call expression="getWorld().addObject(newBall,getX(),getY())" expression-java="getWorld().addObject(newBall, getX(), getY())" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="alignWithVector" enable="true">
+            <javadoc xml:space="preserve">Allows the cannonball to allign with the vectors using trigonometry.</javadoc>
+            <params>
+                <params type="Vector2D" type-java="Vector2D" name="v"/>
+            </params>
+            <throws/>
+            <body>
+                <variable type="double" type-java="double" name="adjacent" value="v.getX()" value-java="v.getX()" enable="true"/>
+                <variable type="double" type-java="double" name="opposite" value="v.getY()" value-java="v.getY()" enable="true"/>
+                <variable type="double" type-java="double" name="angleRadians" value="Math.atan2(opposite,adjacent)" value-java="Math.atan2(opposite, adjacent)" enable="true"/>
+                <variable type="double" type-java="double" name="angleDegrees" value="Math.toDegrees(angleRadians)" value-java="Math.toDegrees(angleRadians)" enable="true"/>
+                <call expression="setRotation((int)angleDegrees)" expression-java="setRotation((int)angleDegrees)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

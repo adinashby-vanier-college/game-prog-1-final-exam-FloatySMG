@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -24,18 +23,6 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        Canon canon =  new  Canon();
-        addObject(canon, 95, 92);
-        Canon canon2 =  new  Canon();
-        addObject(canon2, 321, 277);
-        Canon canon3 =  new  Canon();
-        addObject(canon3, 692, 107);
-        Canon canon4 =  new  Canon();
-        addObject(canon4, 708, 478);
-        Canon canon5 =  new  Canon();
-        addObject(canon5, 497, 52);
-        canon3.setLocation(730, 171);
-        canon2.setLocation(289, 316);
         CannonBall cannonBall =  new  CannonBall();
         addObject(cannonBall, 262, 101);
         CannonBall cannonBall2 =  new  CannonBall();
@@ -64,10 +51,6 @@ public class MyWorld extends World
         removeObject(hero);
         addObject(hero, 711, 302);
         hero.setLocation(722, 39);
-        canon3.setRotation(180);
-        canon4.setLocation(737, 479);
-        canon4.setRotation(180);
-        canon5.setRotation(90);
         cannonBall5.setLocation(415, 318);
         hero.setRotation(180);
         hero.setLocation(742, 58);
@@ -82,5 +65,37 @@ public class MyWorld extends World
         cannonBall6.setLocation(616, 177);
         cannonBall.setLocation(220, 103);
         cannonBall2.setLocation(338, 94);
+        Cannon cannon =  new  Cannon();
+        addObject(cannon, 494, 61);
+        cannon.setRotation(90);
+        Cannon cannon2 =  new  Cannon();
+        addObject(cannon2, 257, 312);
+        Cannon cannon3 =  new  Cannon();
+        addObject(cannon3, 721, 477);
+        cannon3.setRotation(180);
+        Cannon cannon4 =  new  Cannon();
+        addObject(cannon4, 80, 132);
+        Cannon cannon5 =  new  Cannon();
+        addObject(cannon5, 719, 181);
+        cannon5.getImage();
+        cannon5.getRotation();
+        cannon5.getRotation();
+        cannon5.setRotation(180);
+        removeObject(cannonBall);
+        removeObject(cannonBall2);
+        removeObject(cannonBall9);
+        removeObject(cannonBall8);
+        removeObject(cannonBall7);
+        removeObject(cannonBall10);
+        removeObject(cannonBall6);
+        removeObject(cannonBall3);
+        removeObject(cannonBall4);
+        removeObject(cannonBall5);
+        FinishLocation finishLocation2 =  new  FinishLocation();
+        addObject(finishLocation2, 647, 56);
+        removeObject(cannon);
+        addObject(cannon, 519, 62);
+        cannon.setRotation(90);
+        removeObject(finishLocation2);
     }
 }

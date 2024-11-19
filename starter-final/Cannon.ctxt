@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Cannon
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cannon\ here.\ @author\ (your\ name)\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Allows\ the\ methods\ to\ be\ used.\r\n
+comment2.params=
+comment2.target=void\ moveAround()
+comment2.text=\r\n\ Allows\ the\ cannons\ to\ move\ at\ random\ intervals,\ making\ the\ game\ have\ more\ replayability.\r\n
+comment3.params=v
+comment3.target=void\ alignWithVector(Vector2D)
+comment3.text=\r\n\ Allows\ the\ cannonball\ to\ allign\ with\ the\ vectors\ using\ trigonometry.\r\n
+numComments=4
